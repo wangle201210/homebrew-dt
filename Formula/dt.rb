@@ -12,7 +12,7 @@ class Dt < Formula
 
   def install
     bin.install "dt"
-    system "xattr", "-d", "com.apple.quarantine", "#{bin}/dt"
+    system "xattr", "-c", "#{bin}/dt"
   end
 
 end
